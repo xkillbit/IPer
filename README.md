@@ -1,5 +1,5 @@
 # IPer
-Tool for generating random 30% of IPs from a CIDR
+Tool for generating a random 30% of IPs from a CIDR
 # Usage:
 ```bash
 python3 IPer.py -q [CIDR]
