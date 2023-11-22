@@ -24,11 +24,13 @@ def main():
         exit(0)
     else:
         the_range = options.range
-
-    ipaddresses = IPer.get_ips(the_range)
-    for ip in ipaddresses:
-        print(ip)
-        
+    split_ranges = the_range.split(',')
+    print("The range is {}".format(split_ranges))
+    for range in split_ranges:
+        ipaddresses = IPer.get_ips(range)
+        for ip in ipaddresses:
+            print(ip)
+            
 
         
 
